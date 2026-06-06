@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// WinForm 프로젝트 생성
 namespace C__200_Example_WinForm
 {
     public partial class Form_Example_125 : Form
