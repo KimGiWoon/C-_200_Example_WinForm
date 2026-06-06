@@ -30,5 +30,15 @@ namespace C__200_Example_WinForm
         {
             lblText.Text = "Hello! WinForms Forms Application!";
         }
+
+        private void Form_Example_127_Load(object sender, EventArgs e)
+        {
+            CenterToParent();   // 폼의 위치를 부모의 중앙 위치로 설정
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();   // 창 닫기
+        }
     }
 }

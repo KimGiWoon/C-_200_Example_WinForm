@@ -30,12 +30,13 @@
         {
             this.btnClick = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClick
             // 
             this.btnClick.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnClick.Location = new System.Drawing.Point(193, 345);
+            this.btnClick.Location = new System.Drawing.Point(12, 409);
             this.btnClick.Name = "btnClick";
             this.btnClick.Size = new System.Drawing.Size(131, 47);
             this.btnClick.TabIndex = 0;
@@ -54,15 +55,28 @@
             this.lblText.Text = "Text";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.Location = new System.Drawing.Point(372, 409);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(131, 47);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form_Example_127
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 468);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.btnClick);
             this.Name = "Form_Example_127";
             this.Text = "Form_Example_127";
+            this.Load += new System.EventHandler(this.Form_Example_127_Load);
             this.ResumeLayout(false);
 
         }
@@ -71,5 +85,6 @@
 
         private System.Windows.Forms.Button btnClick;
         private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.Button btnClose;
     }
 }
