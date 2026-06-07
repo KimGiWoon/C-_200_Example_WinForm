@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// 메세지 박스
 namespace C__200_Example_WinForm
 {
     public partial class Form_Example_130 : Form
